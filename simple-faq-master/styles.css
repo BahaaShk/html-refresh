@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+a {
+  text-decoration: none;
+}
+
+.numberOne {
+  text-align: center;
+  padding: 40px;
+  color: #030616;
+}
+
+.numberOne h1 {
+  font-size: 38px;
+  font-weight: 600;
+  padding-block: 15px;
+}
+
+.numberOne p {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.container {
+  background: #d2d5da;
+  padding: 100px 20% 100px 25%;
+}
+
+.questionOne {
+  border-bottom: 1px gray solid;
+  padding-bottom: 20px;
+}
+
+.questionTwo {
+  padding-top: 20px;
+}
+
+.questionOne h2,
+.questionOne p,
+.questionOne ul,
+.questionTwo h2,
+.questionTwo p,
+.questionTwo ol {
+  padding-bottom: 25px;
+}
+
+.questionTwo span {
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .numberOne p {
+    font-size: 12px;
+  }
+  .numberOne h1 {
+    font-size: 28px;
+  }
+  .container {
+    padding: 80px 20px 30px 20px;
+  }
+}
+@media (min-width:640px) and (max-width: 1024px) {
+  .numberOne p {
+    font-size: 16px;
+  }
+  .numberOne h1 {
+    font-size: 36px;
+  }
+  .container {
+    padding: 80px 25%;
+  }
+}
