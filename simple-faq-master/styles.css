@@ -22,7 +22,7 @@ a {
 
 .numberOne {
   text-align: center;
-  padding: 40px;
+  padding: 60px;
   color: #030616;
 }
 
@@ -33,18 +33,18 @@ a {
 }
 
 .numberOne p {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   padding-bottom: 30px;
 }
 
 .container {
-  background: #d2d5da;
+  background: #F8FAFC;
   padding: 100px 20% 100px 25%;
 }
 
 .questionOne {
-  border-bottom: 1px gray solid;
+  border-bottom: 1px #d2d5da solid;
   padding-bottom: 20px;
 }
 
@@ -59,6 +59,10 @@ a {
 .questionTwo p,
 .questionTwo ol {
   padding-bottom: 25px;
+}
+
+.questionOne li, .questionTwo li{
+  padding-bottom: 10px;
 }
 
 .questionTwo span {
