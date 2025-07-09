@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  min-height: 100vh;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.newsletter header img {
+  margin-bottom: 10px;
+}
+
+.newsletter h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Form Styles */
+.form {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(56, 61, 58, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #2563eb;
+}
+
+.note {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Accessibility: hide label visually but keep for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
