@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body{
+  background-image: url('./andrew-neel-jtsW--Z6bFw-unsplash.jpg');
+  object-fit: cover;
+  color: white;
+  background-repeat: no-repeat;
+  object-position: center;
+}
+
+
 .emoji-icon{
   width: 50px;
   height: 50px;
@@ -11,10 +20,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color: white;
 }
 
-header {
+.header {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
+
+.header h1{
+  padding-bottom: 10px;
+}
+
+.feature-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  padding: 20px;
+  background-color: gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature div {
+  margin-top: 20px;
+}
+
+img{
+  width: 200px;
+  border-radius: 20px;
+}
+
+/* @media (max-width : 1024px){
+  .feature-container {
+    flex-direction: column;
+    max-width: 250px;
+  }
+} */
