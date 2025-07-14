@@ -37,7 +37,7 @@ body{
   gap: 20px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .feature {
@@ -58,9 +58,10 @@ img{
   border-radius: 20px;
 }
 
-/* @media (max-width : 1024px){
+@media (max-width : 1024px){
   .feature-container {
     flex-direction: column;
-    max-width: 250px;
+    /* max-width: 250px; */
+margin: auto;
   }
-} */
+}
