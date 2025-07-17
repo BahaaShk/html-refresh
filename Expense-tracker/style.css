@@ -159,6 +159,19 @@ transform: translateX(0px);
   }
 }
 
+.transaction:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.transaction.income {
+  border-right-color: #059669;
+}
+
+.transaction.expense {
+  border-right-color: #dc2626;
+}
+
 .transaction .delete-btn{
   background: none;
   border: none;
