@@ -40,13 +40,23 @@ function addBookmark(name,url) {
 
 
 function getBookmarksFromStorage() {
-  const bookmarks = localStorage.getItem("bookmarks")
+  const bookmarks = localStorage.getItem("bookmarks");
+  return bookmarks ? JSON.parse(bookmarks) : [];
 }
 
-function savedBookmark(){
-  
+function saveBookmark(name,url){
+  const bookmarks = getBookmarksFromStorage();
+  bookmarks.push({name,url})
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks))
 }
 
 function loadBookmarks(){
+const bookmarks = getBookmarksFromStorage();
+bookmarks.forEach((bookmark) => addBookmark(bookmark.name, bookmark.url))
+}
 
+function removeBookmarkFromStorage(name,url){
+  let bookmarks = getBookmarksFromStorage()
+  bookmarks = bookmarks.filter((bookmark) => bookmark.name !== name || bookmark.url !== url)
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks))
 }
