@@ -225,7 +225,7 @@ font-weight: 600;
 .strength-bar{
   height: 100%;
   width: 0;
-  min-width: 95%;
+  min-width: 5%;
   background-color: var(--weak-color);
   transition: all 0.3s linear;
   border-radius: 5px;
