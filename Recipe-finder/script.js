@@ -37,7 +37,6 @@ errorContainer.classList.add("hidden")
 //Fetch meals from api
 const response = await fetch(`${SEARCH_URL}${searchTerm}`);
 const data = await response.json()
-console.log(data);
 if(data.meals === null){
   resultHeading.textContent = ``;
   mealsContainer.innerHTML = "";
@@ -132,8 +131,7 @@ async function handleMealClick(e) {
 
     }
   } catch (error) {
-    console.log(error)
-    errorContainer.textContent = error;
+    errorContainer.textContent = 'Something went wrong';
     errorContainer.classList.remove("hidden");
   }
 }
