@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #a78bfa;
+  --primary-dark: #8b5cf6;
+  --primary-light: #c4b5fd;
+  --bg-dark: #1a1a1a;
+  --card-bg: #252525;
+  --text-light: #f3f4f6;
+  --text-gray: #9ca3af;
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
+}
